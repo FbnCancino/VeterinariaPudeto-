@@ -1,0 +1,42 @@
+<%= form_for(veterinario) do |f| %>
+  <% if veterinario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(veterinario.errors.count, "error") %> prohibited this veterinario from being saved:</h2>
+
+      <ul>
+      <% veterinario.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :admin_id %>
+    <%= f.text_field :admin_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :consulta_id %>
+    <%= f.text_field :consulta_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nombre %>
+    <%= f.text_field :nombre %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rut %>
+    <%= f.number_field :rut %>
+  </div>
+
+  <div class="field">
+    <%= f.label :telefono %>
+    <%= f.number_field :telefono %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

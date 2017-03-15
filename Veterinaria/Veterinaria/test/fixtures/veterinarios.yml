@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  admin: one
+  consulta: one
+  nombre: MyString
+  rut: 1
+  telefono: 1
+
+two:
+  admin: two
+  consulta: two
+  nombre: MyString
+  rut: 1
+  telefono: 1

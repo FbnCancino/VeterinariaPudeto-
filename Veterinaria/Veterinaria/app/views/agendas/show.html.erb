@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Veterinario:</strong>
+  <%= @agenda.veterinario %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @agenda.fecha %>
+</p>
+
+<p>
+  <strong>Hora:</strong>
+  <%= @agenda.hora %>
+</p>
+
+<%= link_to 'Edit', edit_agenda_path(@agenda) %> |
+<%= link_to 'Back', agendas_path %>

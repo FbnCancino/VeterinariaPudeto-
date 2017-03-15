@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Paciente:</strong>
+  <%= @consultum.paciente %>
+</p>
+
+<p>
+  <strong>Sintomas:</strong>
+  <%= @consultum.sintomas %>
+</p>
+
+<p>
+  <strong>Diagnostico:</strong>
+  <%= @consultum.diagnostico %>
+</p>
+
+<p>
+  <strong>Fecha llegada:</strong>
+  <%= @consultum.fecha_llegada %>
+</p>
+
+<p>
+  <strong>Fecha salida:</strong>
+  <%= @consultum.fecha_salida %>
+</p>
+
+<%= link_to 'Edit', edit_consultum_path(@consultum) %> |
+<%= link_to 'Back', consulta_path %>

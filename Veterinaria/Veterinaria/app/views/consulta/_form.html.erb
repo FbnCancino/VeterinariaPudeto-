@@ -1,0 +1,42 @@
+<%= form_for(consultum) do |f| %>
+  <% if consultum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(consultum.errors.count, "error") %> prohibited this consultum from being saved:</h2>
+
+      <ul>
+      <% consultum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :paciente_id %>
+    <%= f.text_field :paciente_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sintomas %>
+    <%= f.text_field :sintomas %>
+  </div>
+
+  <div class="field">
+    <%= f.label :diagnostico %>
+    <%= f.text_field :diagnostico %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fecha_llegada %>
+    <%= f.date_select :fecha_llegada %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fecha_salida %>
+    <%= f.date_select :fecha_salida %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

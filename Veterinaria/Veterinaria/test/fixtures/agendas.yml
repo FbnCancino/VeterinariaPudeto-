@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  veterinario: one
+  fecha: 2017-02-09
+  hora: 2017-02-09 20:19:14
+
+two:
+  veterinario: two
+  fecha: 2017-02-09
+  hora: 2017-02-09 20:19:14

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Proveedor:</strong>
+  <%= @boletum.proveedor %>
+</p>
+
+<p>
+  <strong>Admin:</strong>
+  <%= @boletum.admin %>
+</p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @boletum.cliente %>
+</p>
+
+<p>
+  <strong>Consulta:</strong>
+  <%= @boletum.consulta %>
+</p>
+
+<p>
+  <strong>Costo:</strong>
+  <%= @boletum.costo %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @boletum.fecha %>
+</p>
+
+<p>
+  <strong>Hora:</strong>
+  <%= @boletum.hora %>
+</p>
+
+<%= link_to 'Edit', edit_boletum_path(@boletum) %> |
+<%= link_to 'Back', boleta_path %>
